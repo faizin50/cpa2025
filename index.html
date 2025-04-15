@@ -6,28 +6,36 @@
   <title>CPA 2025</title>
 </head>
 <body>
+
   <h1>Selamat Datang!</h1>
   <p>Klik tombol di bawah untuk mendapatkan penawaran spesial:</p>
 
-  <a href="https://adclub.g2afse.com/click?pid=424&offer_id=24" target="_blank">
-    <button style="padding: 10px 20px; font-size: 18px;">Dapatkan Penawaran</button>
+  <!-- Tombol dengan tracking Histats -->
+  <a href="https://adclub.g2afse.com/click?pid=424&offer_id=24&ref_id=Led" target="_blank"
+     onclick="_Hasync.push(['Histats.track_event', 'Klik Penawaran']);">
+    <button style="padding: 10px 20px; font-size: 18px;">🎁 Dapatkan Penawaran</button>
   </a>
 
   <!-- Kode Histats -->
   <div id="histats_counter"></div>
   <script type="text/javascript">
-    var _Hasync= _Hasync|| [];
+    var _Hasync = _Hasync || [];
     _Hasync.push(['Histats.start', '1,4944071,4,9,110,60,00011111']);
     _Hasync.push(['Histats.fasi', '1']);
     _Hasync.push(['Histats.track_hits', '']);
-    (function() {
-      var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    (function () {
+      var hs = document.createElement('script');
+      hs.type = 'text/javascript';
+      hs.async = true;
       hs.src = ('//s10.histats.com/js15_as.js');
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
     })();
   </script>
   <noscript>
-    <a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4944071&101" alt="histats" border="0"></a>
+    <a href="/" target="_blank">
+      <img src="//sstatic1.histats.com/0.gif?4944071&101" alt="histats" border="0">
+    </a>
   </noscript>
+
 </body>
 </html>
