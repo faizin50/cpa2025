@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
-  <!-- Histats Tracking Code -->
+
   <script type="text/javascript">
+    // Ambil parameter dari URL (contoh: ?sub_id=LOYAL)
+    const params = new URLSearchParams(window.location.search);
+    const sub_id = params.get("sub_id") || "default";
+
+    // URL redirect yang akan dimodifikasi
+    const offerLink = "https://adclub.g2afse.com/click?pid=424&offer_id=24&ref_id=Led&sub_id=" + sub_id;
+
+    // Tracking Histats
     var _Hasync= _Hasync|| [];
     _Hasync.push(['Histats.start', '1,4944071,4,9,110,60,00011111']);
     _Hasync.push(['Histats.fasi', '1']);
@@ -14,20 +22,18 @@
       hs.src = ('//s10.histats.com/js15_as.js');
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
     })();
+
+    // Redirect setelah delay
+    setTimeout(function() {
+      window.location.href = offerLink;
+    }, 1000);
   </script>
+
   <noscript>
-    <a href="/" target="_blank">
-      <img src="//sstatic1.histats.com/0.gif?4944071&101" alt="" border="0">
-    </a>
+    <a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4944071&101" alt="" border="0"></a>
   </noscript>
 </head>
 <body>
-  <p>Redirecting to offer...</p>
-  <script>
-    // Tunggu sebentar agar Histats bisa track
-    setTimeout(function() {
-      window.location.href = "https://adclub.g2afse.com/click?pid=424&offer_id=24&ref_id=Led";
-    }, 1000);
-  </script>
+  <p>Redirecting with tracking...</p>
 </body>
 </html>
